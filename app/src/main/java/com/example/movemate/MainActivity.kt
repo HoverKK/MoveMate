@@ -18,11 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_historia -> {
-                showToast("Historia clicked")
-                return true
-            }
-
             R.id.action_kalorie -> {
                 showToast("Kalorie clicked")
                 return true
