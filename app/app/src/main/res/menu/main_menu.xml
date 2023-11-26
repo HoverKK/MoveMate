@@ -2,11 +2,6 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_ćwiczenia"
-        android:title="Ćwiczenia"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/action_kalorie"
         android:title="Kalorie"
         android:orderInCategory="100"
@@ -21,9 +16,5 @@
         android:title="GPS"
         android:orderInCategory="100"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_calculate_calories"
-        android:title="Calculate Calories"
-        app:showAsAction="always" />
 
 </menu>
