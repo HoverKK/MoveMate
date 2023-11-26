@@ -3,10 +3,11 @@ package com.example.movemate
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity<ListView> : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -58,8 +59,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private val foodItemList = mutableListOf(
-        FoodItem("Apple", 95),
-        FoodItem("Banana", 105),
-        FoodItem("Yogurt", 150)
+        FoodItem("Apple 100g", 95),
+        FoodItem("Banana 100g", 105),
+        FoodItem("Yogurt 100g", 150),
+        FoodItem("Big Mac z McDonald’s 100g",256),
+        FoodItem("Hot dog 100g", 269),
+        FoodItem("Kebab 100g", 225),
+        FoodItem("Frytki 100g", 254),
+        FoodItem("Ser Gouda 100g", 356),
+        FoodItem("Jogurt 100g",61),
+        FoodItem("Mleko 100g", 61),
+        FoodItem("Pizza Capricciosa 100g", 260),
     )
 }

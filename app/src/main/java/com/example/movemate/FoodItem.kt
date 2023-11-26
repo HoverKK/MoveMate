@@ -1,4 +1,3 @@
 package com.example.movemate
 
-class FoodItem { data class FoodItem(val name: String, val calories: Int)
-}
+class FoodItem (val name: String, val calories: Int)
