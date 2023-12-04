@@ -37,6 +37,14 @@ class MainActivity<ListView> : AppCompatActivity() {
                 showToast("GPS clicked")
                 return true
             }
+            R.id.action_ćwiczenia -> {
+                showToast("Ćwiczenia clicked")
+                return true
+            }
+            R.id.action_calculate_calories -> {
+                showToast("Calculate Calories clicked")
+                return true
+            }
 
             else -> return super.onOptionsItemSelected(item)
         }
