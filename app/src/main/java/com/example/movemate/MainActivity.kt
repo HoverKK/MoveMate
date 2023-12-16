@@ -6,6 +6,36 @@ import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+class MainActivity : AppCompatActivity(),SensorEventListener {
+
+    private var sensorManager: SensorManager? = null
+
+    private var running = false
+    private var totalSteps = 0f
+    private var previousTotalSteps = 0f
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main)
+
+        sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        running = true
+        val stepSensor : Sensor? = sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+    }
+    override fun onSensorChanged(p0: SensorEvent?) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
+        TODO("Not yet implemented")
+    }
+}
 
 class MainActivity<ListView> : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
