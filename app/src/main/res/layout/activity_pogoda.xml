@@ -276,3 +276,106 @@
             </LinearLayout>
             <Space android:layout_width="10dp"
                 android:layout_height="wrap_content">
+
+            </Space>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/humidity_1"
+                    android:tint="#FFF">
+
+                </ImageView>
+                <Space android:layout_height="wrap_content"
+                    android:layout_width="5dp">
+
+                </Space>
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/humidity"
+                    android:textSize="14sp"
+                    android:text="5:30am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/info"
+                    android:tint="#FFF">
+
+                </ImageView>
+                <Space android:layout_height="wrap_content"
+                    android:layout_width="5dp">
+
+                </Space>
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Created by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/info"
+                    android:textSize="14sp"
+                    android:text="Evan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content" android:layout_height="wrap_content">
+    </ProgressBar>
+    <TextView
+        android:id="@+id/errortext"
+        android:layout_centerInParent="true"
+        android:text="Something went wrong"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</RelativeLayout>
+
+
+    </RelativeLayout>
