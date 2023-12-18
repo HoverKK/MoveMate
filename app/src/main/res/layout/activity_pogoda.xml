@@ -94,3 +94,89 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailsContainer"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orintation="horizontal"
+            android:weightSun="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/sunrise"
+                    android:tint="#FFF">
+
+                </ImageView>
+                <Space android:layout_height="wrap_content"
+                    android:layout_width="5dp">
+
+                </Space>
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/sunrise"
+                    android:textSize="14sp"
+                    android:text="5:30am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#3CF1EBF1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/sunset"
+                    android:tint="#FFF">
+
+                </ImageView>
+                <Space android:layout_height="wrap_content"
+                    android:layout_width="5dp">
+
+                </Space>
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/sunset"
+                    android:textSize="14sp"
+                    android:text="5:30am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
