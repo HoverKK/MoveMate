@@ -92,4 +92,5 @@
             </TextView>
 
         </LinearLayout>
-        x.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
