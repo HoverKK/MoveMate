@@ -1,37 +1,47 @@
 package com.example.movemate
 
-import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.ArrayAdapter
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
-import androidx.appcompat.app.AppCompatActivity;
 import android.hardware.SensorManager
-import android.os.Bundle;
-import android.util.Log
-import android.widget.Toast
-
 import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
-import java.lang.Exception
 import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-
-
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val editTextWeight = findViewById<EditText>(R.id.weight)
+        val editTextHeight = findViewById<EditText>(R.id.height)
+        val button = findViewById<Button>(R.id.btnSubmit)
+        val textView = findViewById<TextView>(R.id.wynik)
+        button.setOnClickListener {
+            val height = editTextHeight.text.toString().toFloat()
+            val weight = editTextWeight.text.toString().toFloat()
+            val bmi = weight / (height * height) * 10000
+            textView.text = bmi.toString()
+        }
+    }
+}
 class MainActivity : AppCompatActivity(){
 
     val CITY: String = "dhaka,bd"
