@@ -251,3 +251,52 @@ class MainActivity<ListView> : AppCompatActivity() {
         FoodItem("Pizza Capricciosa 100g", 260),
     )
 }
+
+    Mainactivity.java
+
+    package com.example.krokomierz3;
+
+    import androidx.appcompat.app.AppCompatActivity;
+
+    import android.app.SharedElementCallback;
+    import android.content.Context;
+    import android.content.SharedPreferences;
+    import android.hardware.Sensor;
+    import android.hardware.SensorEvent;
+    import android.hardware.SensorEventListener;
+    import android.hardware.SensorManager;
+    import android.os.Bundle;
+    import android.view.View;
+    import android.widget.ProgressBar;
+    import android.widget.TextView;
+    import android.widget.Toast;
+
+    public class MainActivity extends AppCompatActivity implements SensorEventListener {
+
+        private SensorManager mSensorManager = null;
+        private Sensor stepSensor;
+        private int totalSteps = 0;
+        private int previewsTotalSteps = 0;
+        private ProgressBar progressBar;
+        private TextView steps;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
+            progressBar = findViewById(R.id.progressBar);
+            steps = findViewById(R.id.steps);
+
+            resetSteps();
+            loadDate();
+            mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+            stepSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+        }
+
+
+
+
+
+
+
+
