@@ -41,18 +41,65 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:text="Kliknij"
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:text="Kliknij" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/wynik"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="16 - 16.9 - wychudzenie"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="17 - 18.4 - niedowaga"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="18.5 - 24.9 - wartość prawidłowa"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="25 - 29.9 - nadwaga"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="30 - 34.9 - I stopień otyłośc"
+        android:textSize="15sp" />
 
 </LinearLayout>
